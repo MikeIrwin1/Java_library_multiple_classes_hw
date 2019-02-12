@@ -9,7 +9,7 @@ public class BookTest {
 
     @Before
     public void before(){
-        book = new Book("To Kill a Mockingbird", "Harper Lee");
+        book = new Book("To Kill a Mockingbird", "Harper Lee", "Thriller");
     }
 
     @Test
@@ -18,7 +18,12 @@ public class BookTest {
     }
 
     @Test
-    public void bookHasGenre(){
+    public void bookHasAuthor(){
         assertEquals("Harper Lee", book.getAuthor());
+    }
+
+    @Test
+    public void bookHasGenre(){
+        assertEquals("Thriller", book.getGenre());
     }
 }
