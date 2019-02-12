@@ -8,7 +8,11 @@ public class Library {
         this.collection = new ArrayList<>();
     }
 
-    public int getCollectionAmount(){
+    public int getBookCount(){
         return this.collection.size();
+    }
+
+    public void addBook(Book book){
+        this.collection.add(book);
     }
 }
